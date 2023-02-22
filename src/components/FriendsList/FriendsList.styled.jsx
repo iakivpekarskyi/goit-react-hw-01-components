@@ -5,17 +5,19 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 10px;
   list-style: none;
-  align-items: center;
 `;
 export const Item = styled.li`
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 300px;
+  height: 80px;
+  padding: 0 20px;
   border-radius: 8px;
 `;
 export const Status = styled.span`
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background-color: ${({ status }) => (status ? 'green' : 'red')};
   border-radius: 50%;
 `;
@@ -26,5 +28,5 @@ export const Avatar = styled.img`
 `;
 export const Name = styled.p`
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
 `;
