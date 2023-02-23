@@ -12,7 +12,7 @@ import {
 export const Statistics = ({ title, stats }) => {
   return (
     <StatCard>
-      {<Title>{title}</Title>}
+      {title ? <Title>{title}</Title> : null}
       <StatList>
         {stats.map(({ id, label, percentage }) => {
           return (

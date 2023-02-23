@@ -3,7 +3,7 @@ import {
   Table,
   TableHead,
   HeadTableData,
-  Body,
+  TableBody,
   TableRow,
   TableData,
 } from './TransactionHistory.styled';
@@ -16,7 +16,7 @@ export const TransactionHistory = ({ transactions }) => {
         <HeadTableData>Amount</HeadTableData>
         <HeadTableData>Currency</HeadTableData>
       </TableHead>
-      <Body>
+      <TableBody>
         {transactions.map(({ id, type, amount, currency }) => {
           return (
             <TableRow key={id}>
@@ -26,7 +26,7 @@ export const TransactionHistory = ({ transactions }) => {
             </TableRow>
           );
         })}
-      </Body>
+      </TableBody>
     </Table>
   );
 };

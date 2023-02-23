@@ -18,7 +18,7 @@ export const HeadTableData = styled.th`
   padding: 10px 0;
 `;
 
-export const Body = styled.tbody`
+export const TableBody = styled.tbody`
   font-size: 16px;
 `;
 
