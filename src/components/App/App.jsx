@@ -12,13 +12,7 @@ import { AppWrapper } from './App.styled';
 export const App = () => {
   return (
     <AppWrapper>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      <Profile user={user} />
       <Statistics stats={data} />
       <FriendsList friends={friends} />
       <TransactionHistory transactions={transactions} />
